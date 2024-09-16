@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-    <header>
+    <header class="container">
         <nav>
             <img src="../assets/img/dc-logo.png" alt="">
             <ul>
@@ -33,12 +33,14 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+    @use "../style/general.scss" as *;
+
     nav {
+      padding: 20px 0;
       background-color: white;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       text-align: center;
-      padding: 20px;
       ul {
         display: flex;
         justify-content:space-between;

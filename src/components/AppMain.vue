@@ -10,9 +10,24 @@ export default {
 
 <template>
     <main>
-        <h1>Main</h1>
+      <div class="container">
+        <p>->Content Goes Here<-</p>
+      </div>
     </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+  @use "../style/general.scss" as *;
+
+  main {
+    background-color: #1C1C1C;
+    color: white;
+    height: 150px;
+    padding: 60px 0;
+    p {
+      vertical-align:middle;
+      font-weight: bolder;
+      font-size: 2rem;
+    }
+  }
 </style>

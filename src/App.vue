@@ -19,13 +19,11 @@ export default {
 </script>
 
 <template>
-    <div class="container">
         <AppHeader />
-    </div>
     <AppMain />
     <AppFooter />
 </template>
 
-<style lang="scss">
-    @use "style/general.scss"
+<style>
+
 </style>
