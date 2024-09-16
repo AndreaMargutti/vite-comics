@@ -54,6 +54,34 @@ export default {
           <img src="../assets/img/dc-logo-bg.png" alt="">
         </section>
       </div>
+
+      <section class="bottom-footer">
+        <div class="container">
+          <div>
+            <button>SIGN-UP NOW</button>
+          </div>
+          <div class="socials">
+            <ul class="d-flex">
+              <li>FOLLOW US</li>
+              <li>
+                <img src="../assets/img/footer-facebook.png" alt="">
+              </li>
+              <li>
+                <img src="../assets/img/footer-twitter.png" alt="">
+              </li>
+              <li>
+                <img src="../assets/img/footer-youtube.png" alt="">
+              </li>
+              <li>
+                <img src="../assets/img/footer-pinterest.png" alt="">
+              </li>
+              <li>
+                <img src="../assets/img/footer-periscope.png" alt="">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </footer>
 </template>
 
@@ -67,7 +95,7 @@ export default {
       div {
         display: flex;
         section {
-          flex-basis: 50%;
+          padding: 20px;
         }
       }
       ul {
@@ -89,4 +117,32 @@ export default {
       display: flex;
       flex-wrap: wrap;
     }
+
+    .bottom-footer {
+      background-color: #303030;
+      > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+      }
+
+      button {
+        padding: 0 20px;
+        border: 2px solid dodgerblue;
+        background-color: transparent;
+        color: white;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        :first-child {
+          color: dodgerblue;
+        }
+        li {
+          margin-right: 10px;
+        }
+      }
+    }
+
     </style>

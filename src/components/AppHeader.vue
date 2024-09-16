@@ -25,7 +25,7 @@ export default {
             <img src="../assets/img/dc-logo.png" alt="">
             <ul>
                 <li v-for="navItem in navList">
-                  {{ navItem }}
+                  {{ navItem.toUpperCase() }}
                 </li>
             </ul>
         </nav>
