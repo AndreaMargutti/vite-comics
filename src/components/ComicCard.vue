@@ -28,11 +28,13 @@ export default {
 </script>
 
 <template>
-    <div class="card" style="width: 14rem;">
-    <img :src="comicThumb" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title"> {{ comicSerie }}</h5>
-    </div>
+    <div class="col">
+        <div class="card" style="width: 10rem;">
+        <img :src="comicThumb" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"> {{ comicSerie }}</h5>
+        </div>
+        </div>
     </div>
 </template>
 

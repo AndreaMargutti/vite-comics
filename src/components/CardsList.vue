@@ -98,12 +98,14 @@ export default {
 -->
 
 <template>
+    <div class="row row-cols-6">
         <ComicCard v-for="(comic, index) in comicsList"
         :key="index"
         :comicThumb="comic.thumb"
         :comicPrice="comic.price"
         :comicSerie="comic.series"
         :comicType="comic.type" />
+    </div>
 </template>
 
 <style lang="scss" scoped>
