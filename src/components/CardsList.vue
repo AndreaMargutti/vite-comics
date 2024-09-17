@@ -1,9 +1,10 @@
 <script>
-import AppComicCard from './AppComicCard.vue';
+import ComicCard from './ComicCard.vue';
+
 export default {
   data() {
     return {
-      CardInfos: [
+      comicsList: [
         {
             "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
             "price": "$19.99",
@@ -76,17 +77,33 @@ export default {
             "series": "Catwoman",
             "type": "graphic novel",
         },
-    ]   
+    ]
     }
   },
+  
   components: {
-    AppComicCard
+    ComicCard
   }
 }
 </script>
 
+<!--
+ Sintassi Oggetto in comicsList
+ {
+            "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
+            "price": "$19.99",
+            "series": "Action Comics",
+            "type": "comic book",
+        },
+-->
+
 <template>
-    <AppComicCard />
+    <ComicCard v-for="(comic, index) in comicsList"
+    :key="index"
+    :comicThumb="comic.thumb"
+    :comicPrice="comic.price"
+    :comicSerie="comic.series"
+    :comicType="comic.type" />
 </template>
 
 <style scoped>
