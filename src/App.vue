@@ -2,7 +2,7 @@
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
-import AppCards from './components/AppCards.vue';
+
 
 export default {
     data() {
@@ -15,7 +15,6 @@ export default {
         AppHeader,
         AppMain,
         AppFooter,
-        AppCards
     }
 }
 </script>

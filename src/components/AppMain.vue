@@ -1,9 +1,13 @@
 <script>
+import AppCardsList from './AppCardsList.vue';
 export default {
   data() {
     return {
       
     }
+  },
+  components: {
+    AppCardsList
   }
 }
 </script>
@@ -11,7 +15,7 @@ export default {
 <template>
     <main>
       <div class="container">
-        <p>->Content Goes Here<-</p>
+        <AppCardsList />
       </div>
     </main>
 </template>
