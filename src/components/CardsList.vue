@@ -98,13 +98,14 @@ export default {
 -->
 
 <template>
-    <ComicCard v-for="(comic, index) in comicsList"
-    :key="index"
-    :comicThumb="comic.thumb"
-    :comicPrice="comic.price"
-    :comicSerie="comic.series"
-    :comicType="comic.type" />
+        <ComicCard v-for="(comic, index) in comicsList"
+        :key="index"
+        :comicThumb="comic.thumb"
+        :comicPrice="comic.price"
+        :comicSerie="comic.series"
+        :comicType="comic.type" />
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+ @use "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 </style>

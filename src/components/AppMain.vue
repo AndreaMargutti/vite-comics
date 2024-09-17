@@ -28,7 +28,6 @@ export default {
   main {
     background-color: #1C1C1C;
     color: white;
-    height: 150px;
     padding: 60px 0;
     p {
       vertical-align:middle;

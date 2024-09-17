@@ -28,10 +28,14 @@ export default {
 </script>
 
 <template>
-    <div id="card">
-
+    <div class="card" style="width: 14rem;">
+    <img :src="comicThumb" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title"> {{ comicSerie }}</h5>
+    </div>
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+ @use "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 </style>
